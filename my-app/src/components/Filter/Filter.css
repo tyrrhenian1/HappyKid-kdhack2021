@@ -1,0 +1,48 @@
+.filter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 30px;
+    padding: 0 20px;
+}
+.filter > div, button{
+    width: 33%;
+}
+.ant-row{
+    margin-top: 20px;
+    padding: 0 20px;
+    overflow-x: hidden;
+}
+.card{
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-gap: 10px;
+    gap: 10px;
+    max-width: 350px;
+    align-items: center;
+}
+.card_wrapper{
+    margin: auto;
+}
+.filter_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.filter_item:first-child{
+    align-items: flex-start;
+}
+.filter_item:last-child{
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.filter_item > div, button{
+    width: 100%;
+}
+.ant-col{
+    overflow : hidden;
+    padding: 5px;
+}
