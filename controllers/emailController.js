@@ -9,8 +9,8 @@ class EmailController {
             port: 465,
             secure: true, // use SSL
             auth: {
-                user: 'tyrrhenian1212@gmail.com', // Your email id
-                pass: 'Fhntv2012' // Your password
+                user: '', // Your email id
+                pass: '' // Your password
             }
         }
         const { mail,message } = req.body
@@ -18,7 +18,7 @@ class EmailController {
         const transporter = nodemailer.createTransport(smtpConfig);
 
         const mailOptions = {
-            from: 'tyrrhenian1212@gmail.com', // sender address
+            from: 'tyrrhenian1212@gmail.com', // sender
             to: mail, // list of receivers
             subject: 'Happybaby',
             text: 'this is some text',
